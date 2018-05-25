@@ -1,0 +1,11 @@
+.Container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Row {
+    padding: 10px 0;
+}
+.Container:nth-child(even) {
+    background: #eee;
+}

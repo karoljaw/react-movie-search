@@ -1,0 +1,15 @@
+.Input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.Navbar {
+    background-color: #081c24;
+}
+
+.Image {
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+}

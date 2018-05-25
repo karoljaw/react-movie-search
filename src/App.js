@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import Navigation from './Navigation';
 import MovieRow from './MovieRow';
 
 class App extends Component {
@@ -37,16 +37,16 @@ class App extends Component {
 
   searchPhrase(e) {
     this.setState({ inputValue: e.target.value })
-    if (e.target.value.length > 0) {
-      this.loadMovies(e.target.value);
-    }
+    this.loadMovies(e.target.value);
+    
   }
 
   render() {
 
     return (
-      <div >
-        <input type='text' value={this.state.inputValue} onChange={this.searchPhrase}></input>
+      <div>
+      <Navigation value={this.state.inputValue} change={this.searchPhrase}>
+      </Navigation>
         {this.state.rows}
       </div>
     )
